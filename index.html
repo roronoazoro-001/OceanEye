@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OceanEye | Marine Spill Investigation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">◎</span><div><strong>OceanEye</strong><small>MARINE INTELLIGENCE</small></div></div>
+      <div class="case-card"><div class="eyebrow">ACTIVE INVESTIGATION</div><strong>OE-26-0417</strong><span>Bay of Bengal · 17 Apr 2026</span><i class="live-dot"></i><em>Demo environment</em></div>
+      <nav id="nav">
+        <div class="nav-label">WORKSPACE</div>
+        <button class="nav-item active" data-view="dashboard"><span>◈</span>Dashboard</button>
+        <button class="nav-item" data-view="acquisition"><span>⇩</span>Data acquisition</button>
+        <button class="nav-item" data-view="preprocess"><span>◌</span>Preprocessing</button>
+        <button class="nav-item" data-view="detection"><span>⌁</span>Spill detection</button>
+        <button class="nav-item" data-view="drift"><span>↝</span>Drift analysis</button>
+        <button class="nav-item" data-view="source"><span>⌖</span>Source estimation</button>
+        <button class="nav-item" data-view="ais"><span>≋</span>AIS correlation</button>
+        <button class="nav-item" data-view="ranking"><span>↕</span>Candidate ranking</button>
+        <button class="nav-item" data-view="evidence"><span>⛓</span>Evidence graph</button>
+        <button class="nav-item" data-view="report"><span>▤</span>Investigation report</button>
+      </nav>
+      <div class="sidebar-foot"><div class="system-row"><span class="status-dot"></span>All systems nominal</div><div class="version">OCEANEYE CORE · v0.9.4</div></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><div><div class="crumb">INVESTIGATIONS / OE-26-0417</div><h1 id="page-title">Investigation overview</h1></div><div class="top-actions"><span class="demo-badge"><span class="status-dot"></span>DEMO MODE</span><button class="icon-button" title="Notifications">♧</button><div class="avatar">AK</div></div></header>
+      <div id="app"></div>
+    </main>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
